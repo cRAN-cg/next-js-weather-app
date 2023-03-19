@@ -1,0 +1,25 @@
+.zipCodeForm {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 16px;
+  backdrop-filter: saturate(180%) blur(5px);
+  background: hsla(0, 0%, 100%, 0.4);
+  transform: translateZ(0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inputFormContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerContent {
+  mix-blend-mode: difference; /* mask the color */
+  color: #fff;
+  text-align: center;
+}
