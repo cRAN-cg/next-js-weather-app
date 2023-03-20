@@ -1,9 +1,12 @@
-import { useRouter } from 'next/router';
-import ZipInputForm from '../components/ZipInputForm';
-
 import styles from "./../styles/Home.module.css"
 
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import moment from "moment";
+
+import ZipInputForm from '../components/ZipInputForm';
+
+
 
 
 export default function Home() {
@@ -18,8 +21,7 @@ export default function Home() {
   }
 
   function getHour() {
-    const now = Date.now();
-    const _hour = new Date(now).getHours().toString().padStart(2, '0');
+    const _hour = moment(Date.now()).hour()
     setHour(_hour);
   }
 

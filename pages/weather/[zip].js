@@ -41,7 +41,7 @@ const Weather = ({ data }) => {
     <>
       {
         weather && weather.list ?
-          <div className={`sky-gradient-${moment(weather.list[0].dt).hour()}`}>
+          <div className={`sky-gradient-${moment(Date.now()).hour()}`}>
             <h1 className={styles.heading}>
               Weather Forecast for {weather.city.name}
             </h1>
